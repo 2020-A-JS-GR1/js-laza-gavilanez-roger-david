@@ -81,7 +81,7 @@ const laza ={
     ropa: {
         color:'plomo',
         talla:'40'
-    }
+    },
     mascotas:['Cachetes','Pequitas','Nalguitas']
 
 }; //object
