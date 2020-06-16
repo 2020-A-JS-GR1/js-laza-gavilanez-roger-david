@@ -81,12 +81,65 @@ const laza ={
     ropa: {
         color:'plomo',
         talla:'40'
-    }
-    mascotas:['Cachetes','Pequitas','Nalguitas']
+    },
+    mascotas:['Cachetes','Pequitas','Nalguitas'],
 
 }; //object
+// acceder a las propiedades del objeto
 laza.nombre;
 laza.apellido;
-const arreglodenumeros =[
+laza["nombre"];
+laza.nombre="Juanito";
+laza["nombre"]="Pedro";
+console.log(laza);
+console.log(laza.sueldo);//undefine
+laza.sueldo=1.23;
+console.log(laza.sueldo);//undefine
+laza["gastos"]="0.8";
+laza.nombre=undefined;// asi se elimina
+console.log(laza.nombre);//undefine
+//console.log(Object.keys(laza));
+console.log(Object.values(laza));
+delete laza.nombre;
+//console.log(laza);//undefine
+//CLASE OBJECT
+//console.log(Object.keys(laza));// obtener la llaves de un objeto
+console.log(Object.values(laza));
+// const arreglodenumeros =[
+//
+// ]; //object
+//////////////////////////////
+// lista variables por valor en JS
+//numer
+//string
+//boolean
+//undefine
+let edadlaza=22;
+let edadRoger= edadlaza;
+console.log(edadlaza);
+console.log(edadRoger);
+edadlaza=edadlaza+1;
+console.log(edadlaza);
+console.log(edadRoger);
+//Variables por referencia OJO
 
-]; //object
+// let kevin =ronald;
+// console.log(kevin);
+// console.log(ronald);
+// kevin.nombre="kevin";
+// console.log(kevin);
+// console.log(ronald);
+// //delete ronald.nombre;
+// console.log(kevin);
+// console.log(ronald);
+/// con esto le hacemos por diferente
+let ronald ={
+    nombre:"rata"
+};
+let kevins = Object.assign({},ronald);
+console.log(kevins);
+console.log(ronald);
+delete ronald.nombre;
+kevins.nombre="Kathe";
+console.log(kevins);
+console.log(ronald);
