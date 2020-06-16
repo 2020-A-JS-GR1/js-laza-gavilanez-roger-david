@@ -8,3 +8,4 @@ cual=undefined;
 cual=null;
 cual={};
 
+////fin
