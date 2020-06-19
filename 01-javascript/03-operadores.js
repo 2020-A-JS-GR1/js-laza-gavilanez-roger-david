@@ -91,21 +91,36 @@ console.log('respuestaForEach',respuestaForEach);
 //MAP DEVUELVE UN NUEVO ELEMNTO
 const respuestaMap=arreglo.
 map(
-    function (valoractual,indiceactual,arreglocompleto) {
-        valoractual.nota=valoractual.nota+1;
-        return valoractual;
+     (valoractual,indiceactual,arreglocompleto) =>{
+        const nuevoElemento={
+            id: valoractual.id,
+            nombre: valoractual.nombre,
+            nota: valoractual.nota+1,
+        };
+         return nuevoElemento;
     }
 );
 console.log('respuestaMap',respuestaMap);
 /////LO QUE HACE EL MAP CREA UN NUEVO ARREGLO , LA RESPUESTA QUE RECIBE ES UN NUEVO ARREGLO
 //console.log('arreglo',arreglo);
 
-const respuestaMapNuevo=arreglo.
-map(
-    function (valoractual,indiceactual,arreglocompleto) {
-        return valoractual.nota;
-    }
-);
-console.log('respuestaNuevo',respuestaMapNuevo);
+// const respuestaMapNuevo=arreglo.
+// map(
+//     //funcion anonima no tiene nombre
+//     (valoractual,indiceactual,arreglocompleto) => {
+//         return valoractual.nota;
+//     }
+// );
+//console.log('respuestaNuevo',respuestaMapNuevo);
 /////LO QUE HACE EL MAP CREA UN NUEVO ARREGLO , LA RESPUESTA QUE RECIBE ES UN NUEVO ARREGLO
 //console.log('arreglo',arreglo);
+console.log(arreglo);
+
+const respuestaFilter=arreglo.
+filter(
+    (valoractual,indiceactual,arreglocompleto) =>{
+        return valoractual.nota >=14 ;
+
+    }
+);
+console.log('respuestaFiltro',respuestaFilter);
