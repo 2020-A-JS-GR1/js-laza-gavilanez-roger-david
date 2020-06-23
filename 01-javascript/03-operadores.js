@@ -124,3 +124,42 @@ filter(
     }
 );
 console.log('respuestaFiltro',respuestaFilter);
+/////////////////////////////DEBER --- NO OLVIDARSE
+// Hay notas menores a nueve? SI NO
+
+//AND
+const respuestaSome = arreglo.some(
+    (valoractual,indiceactual,arreglocompleto)=>{
+        return valoractual.nota <4;
+    }
+);
+//console.log('respuestaSome', respuestaSome);
+
+//OR
+// ANY -> expresion
+// devuelve booleano
+// Todas las notas son mayores a 14? SI NO
+const respuestaEvery = arreglo.every(
+    (valoractual,indiceactual,arreglocompleto)=>{
+        return valoractual.nota >14;
+    }
+);
+//console.log('respuestaEvery', respuestaEvery);
+// redue izq -> derecha
+// reduceRigth der -> izq
+
+const respuestaReduce = arreglo.reduce(
+    (valorAcumulado,valorActual,indice,arreglocompleto)=>{
+        return valorAcumulado-valorActual.nota;
+    },
+    500//Acumulador
+);
+console.log('Respuesta Reduce',respuestaReduce);
+
+const arregloEstudiantesMenoresANueve = arreglo.
+    map((valorActual)=>valorActual.nota*1.3).
+    filter((nota)=>nota<9);
+const totalPuntosEstudiantes = arregloEstudiantesMenoresANueve.
+    reduce((acumulado,actual)=> acumulado + actual,0);
+const notaPromedio =totalPuntosEstudiantes/arregloEstudiantesMenoresANueve.length;
+console.log('RESULTADO ',notaPromedio);
