@@ -30,6 +30,7 @@ function promesaElevarCuadrado(numero) {
 
 }
 
+
 promesaPar(4)
     .then(
     (numeroPar)=>{
