@@ -34,8 +34,6 @@ function escribirArchivo(path,contenido,contenidoNuevo){
                             console.error('Hubo error',error);
                         }else{
                             resolve();
-
-                            //  console.log(contenido);
                         }
                     }
 
