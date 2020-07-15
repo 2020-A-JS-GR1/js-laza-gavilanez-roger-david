@@ -36,3 +36,4 @@ console.log(roger.nombre);
 console.log(roger.apellido);
 console.log(roger.cedula);
 console.log(roger.estadoCivil);
+console.log('Hola')
