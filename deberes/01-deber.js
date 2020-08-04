@@ -50,7 +50,7 @@ const arreglo = [
         nota: 12
     }
 ];
-
+console.log(typeof arreglo);
 let nuevoElemento;
 let primarynote=0;
 const resultado= arreglo.

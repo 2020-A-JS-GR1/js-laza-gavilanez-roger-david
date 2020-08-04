@@ -1,0 +1,4 @@
+[{"nombre":"Roger","apellido":"Laza","edad":"23","estado":"true","cedula":"1724175862"},{"nombre":"Kevin","apellido":"Alvarado","edad":"25","estado":"false","cedula":"1765456782"},{"nombre":"Katherin","apellido":"Taco","edad":"26","estado":"false","cedula":"1789234561"},{"nombre":"r","apellido":"z","edad":"z","estado":"z","cedula":"z"},{"nombre":"Pedro","apellido":"Perez","edad":"23","estado":"true","cedula":"1765142567"}]
+
+
+[{"Dueno":"Roger","mascota":[{"tipo":"gato","nombre":"haru","dice":"miau","edad":"1","crias":"true"}]}]

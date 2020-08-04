@@ -1,0 +1,1 @@
+[{"Dueno":"Roger","mascota":[{"tipo":"gato","nombre":"haru","dice":"miau","edad":23,"crias":true},{"tipo":"conejo","nombre":"pancho","dice":"ruuf","edad":2,"crias":false},{"tipo":"cerdo","nombre":"alvarado","dice":"que mas ve","edad":"21","crias":"false"}]}]
