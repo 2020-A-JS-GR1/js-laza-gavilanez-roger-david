@@ -1,7 +1,11 @@
-<img [src]="url" alt="">
+<img [src]="urlImagen"
+     alt=""
+     (click)="ejecutarEventDioClicImagen()">
 <a [href]="google">
 <p>{{textoEjemplo}}</p>
 </a>
 
-<button (click)="ejemploFuncion()" (blur)="eventoOnBlur()">
-  {{textoEjemplo}}</button>
+<button (click)="ejemploFuncion()" (blur)="eventoOnBlur()" (click)="ejecutarEventDioClic()">
+  {{nombreBoton}}</button>
+
+

@@ -1,17 +1,27 @@
-<h1>Lista de Peliculas</h1>
-<app-carta-pelicula></app-carta-pelicula>
-<h6>Titulo </h6>
-<ul>
-  <li>Papa</li>
-  <li>Cebolla</li>
-</ul>
-<ol>
-  <li>A</li>
-  <li>B</li>
-  <li>C</li>
-</ol>
-<img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/01-cat-questions-nationalgeographic_1228126.jpg?w=1024&h=576" alt="">
-<a href="https://www.google.com">
-  Ir a Google
-</a>
-<button>Mi primer Boton</button>
+<h1>Lista de Pelic
+  ulas</h1>
+<div *ngFor="let numer of arregloNumeros">
+  {{numer}}
+</div>
+<p *ngIf="false">
+  OCULTO
+</p>
+<div *ngFor="let pelicula of peliculas">
+<app-carta-pelicula
+  [urlImagen]="pelicula.url"
+  [descripcion]="pelicula.descripcion"
+  [nombreBoton]="pelicula.nombrePelicula"
+  (eventoDioClicButton)="mensajeConsola($event)"
+  (eventoDioClicImagen)="mensajeConsola($event)"
+>
+</app-carta-pelicula>
+</div>
+<br>
+<app-carta-pelicula
+  urlImagen="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bob-esponja-3-peli-cula-1540476397.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*"
+  descripcion="Descripcion 2"
+  nombreBoton="lIKE 2"
+  (eventoDioClicButton)="mensajeConsola($event)"
+  (eventoDioClicImagen)="mensajeConsola($event)"
+>
+</app-carta-pelicula>
