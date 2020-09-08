@@ -1,27 +1,54 @@
-<h1>Lista de Pelic
-  ulas</h1>
-<div *ngFor="let numer of arregloNumeros">
-  {{numer}}
+<!--<h1>Lista de Peliculas</h1>-->
+<!--<div *ngFor="let numer of arregloNumeros">-->
+<!--  {{numer}}-->
+<!--</div>-->
+<!--<p *ngIf="false">-->
+<!--  OCULTO-->
+<!--</p>-->
+<!--<div *ngFor="let pelicula of peliculas">-->
+<!--<app-carta-pelicula-->
+<!--  [urlImagen]="pelicula.url"-->
+<!--  [descripcion]="pelicula.descripcion"-->
+<!--  [nombreBoton]="pelicula.nombrePelicula"-->
+<!--  (eventoDioClicButton)="mensajeConsola($event)"-->
+<!--  (eventoDioClicImagen)="mensajeConsola($event)"-->
+<!--&gt;-->
+<!--</app-carta-pelicula>-->
+<!--</div>-->
+<!--<br>-->
+<!--<app-carta-pelicula-->
+<!--  urlImagen="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bob-esponja-3-peli-cula-1540476397.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*"-->
+<!--  descripcion="Descripcion 2"-->
+<!--  nombreBoton="lIKE 2"-->
+<!--  (eventoDioClicButton)="mensajeConsola($event)"-->
+<!--  (eventoDioClicImagen)="mensajeConsola($event)"-->
+<!--&gt;-->
+<!--</app-carta-pelicula>-->
+<!--<button (click)="habilitado = !habilitado">-->
+<!--  {{habilitado ? 'habilitado' : 'Deshabilitado'}}-->
+<!--</button>-->
+<!--<app-carta-pelicula *ngIf="habilitado">-->
+
+<!--</app-carta-pelicula>-->
+<!--<button (click)="crerUsuario()">-->
+<!--  Crear Usuario-->
+<!--</button>-->
+<ul>
+  <li>
+    <a [routerLink]="['inicio']" >
+      Ir Inicio
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['login']" >
+      Login
+    </a>
+  </li>
+</ul>
+<div *ngFor="let usuario of arregloUsuario">
+  {{usuario.nombre}}
 </div>
-<p *ngIf="false">
-  OCULTO
-</p>
-<div *ngFor="let pelicula of peliculas">
-<app-carta-pelicula
-  [urlImagen]="pelicula.url"
-  [descripcion]="pelicula.descripcion"
-  [nombreBoton]="pelicula.nombrePelicula"
-  (eventoDioClicButton)="mensajeConsola($event)"
-  (eventoDioClicImagen)="mensajeConsola($event)"
->
-</app-carta-pelicula>
-</div>
-<br>
-<app-carta-pelicula
-  urlImagen="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bob-esponja-3-peli-cula-1540476397.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=1200:*"
-  descripcion="Descripcion 2"
-  nombreBoton="lIKE 2"
-  (eventoDioClicButton)="mensajeConsola($event)"
-  (eventoDioClicImagen)="mensajeConsola($event)"
->
-</app-carta-pelicula>
+
+<router-outlet>
+
+</router-outlet>
