@@ -44,10 +44,15 @@
       Login
     </a>
   </li>
+  <li>
+    <a [routerLink]="['usuario']" >
+      Usuarios
+    </a>
+  </li>
 </ul>
-<div *ngFor="let usuario of arregloUsuario">
-  {{usuario.nombre}}
-</div>
+<!--<div *ngFor="let usuario of arregloUsuario">-->
+<!--  {{usuario.nombre}}-->
+<!--</div>-->
 
 <router-outlet>
 
