@@ -11,5 +11,8 @@ export class RutaCrearUsuarioComponentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  crearUsuario(formulario){
+    console.log(formulario);
+  }
 
 }

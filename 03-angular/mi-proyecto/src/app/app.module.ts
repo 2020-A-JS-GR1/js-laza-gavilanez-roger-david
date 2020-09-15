@@ -13,6 +13,8 @@ import { RutaUsuarioComponent } from './rutas/ruta-usuario/ruta-usuario.componen
 import { RutaListaUsuarioComponentComponent } from './rutas/ruta-lista-usuario-component/ruta-lista-usuario-component.component';
 import { RutaCrearUsuarioComponentComponent } from './rutas/ruta-crear-usuario-component/ruta-crear-usuario-component.component';
 import { RutaEdiarUsuarioComponentComponent } from './rutas/ruta-ediar-usuario-component/ruta-ediar-usuario-component.component';
+import { FormularioUsuarioComponent } from './componentes/formularios/formulario-usuario/formulario-usuario.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,12 +26,16 @@ import { RutaEdiarUsuarioComponentComponent } from './rutas/ruta-ediar-usuario-c
     RutaUsuarioComponent,
     RutaListaUsuarioComponentComponent,
     RutaCrearUsuarioComponentComponent,
-    RutaEdiarUsuarioComponentComponent
+    RutaEdiarUsuarioComponentComponent,
+    FormularioUsuarioComponent
   ],
   imports: [
     BrowserModule,// ->Importa el NgFor y el NGIF
     AppRoutingModule,
-    HttpClientModule, // Importamos el HttpClient
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+    // Importamos el HttpClient
   ],
   providers: [
     UsuarioService
