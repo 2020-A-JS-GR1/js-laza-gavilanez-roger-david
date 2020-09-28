@@ -10,17 +10,22 @@ import {Router} from "@angular/router";
 })
 export class RutaListaUsuarioComponentComponent implements OnInit {
   arregloUsuarios = [];
+  busquedaModelo = '';
 
-  constructor(
+  constructor( // Inyecta dependendicas
     private readonly _usuarioService: UsuarioService,
     private readonly _router: Router
-) {
+  ) {
 
   }
-    irEditarUsuario( id: number){
+
+
+  irAEditarUsuario(id: number) {
     const ruta = ['/usuario', 'editar', id];
+    // /usuario/editar/1
     this._router.navigate(ruta);
   }
+
   eliminarUsuario(id: number) {
     const obsEliminar = this._usuarioService
       .eliminar(id);
@@ -39,7 +44,28 @@ export class RutaListaUsuarioComponentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const observableTraerTodos = this._usuarioService.traerTodos();
+    this.filtrarArreglo();
+  }
+
+  filtrarArreglo() {
+    const consulta = {
+      or: [
+        {
+          nombre: {
+            contains: this.busquedaModelo
+          }
+        },
+        {
+          cedula: {
+            contains: this.busquedaModelo
+          }
+        }
+      ]
+    }
+    const consultaString = 'where=' + JSON.stringify(consulta)
+
+    const observableTraerTodos = this._usuarioService
+      .traerTodos(this.busquedaModelo != '' ? consultaString : '');
     observableTraerTodos
       .subscribe(
         (usuarios: any[]) => {
@@ -49,6 +75,7 @@ export class RutaListaUsuarioComponentComponent implements OnInit {
           console.error('Error', error);
         }
       )
+
   }
 
 }

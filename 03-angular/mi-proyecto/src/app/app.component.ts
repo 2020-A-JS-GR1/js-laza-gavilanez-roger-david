@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {UsuarioService} from "./servicios/http/usuario.service";
+import {AuthService} from "./servicios/auth/auth.service";
 
 @Component({
   selector: 'aplicativo-nuevo',
@@ -40,7 +41,9 @@ export class AppComponent  implements OnInit{
   arregloObservables = [];
   // Inyectar Dependencias
   constructor(
-    private readonly _usuarioService: UsuarioService
+    private readonly _usuarioService: UsuarioService,
+    public readonly _authService: AuthService
+
   ) {
   }
   ngOnInit(): void {
@@ -60,7 +63,7 @@ export class AppComponent  implements OnInit{
           console.log(error);
         }
       );
-    this.arregloObservables.push(suscripcion);
+   // this.arregloObservables.push(suscripcion);
    // suscripcion.unsubscribe();
   }
   crerUsuario() {

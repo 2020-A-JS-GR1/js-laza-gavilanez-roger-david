@@ -15,6 +15,14 @@ import { RutaCrearUsuarioComponentComponent } from './rutas/ruta-crear-usuario-c
 import { RutaEdiarUsuarioComponentComponent } from './rutas/ruta-ediar-usuario-component/ruta-ediar-usuario-component.component';
 import { FormularioUsuarioComponent } from './componentes/formularios/formulario-usuario/formulario-usuario.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {Button, ButtonModule} from "primeng/button";
+import {AuthService} from "./servicios/auth/auth.service";
+import {EstaLogeadoGuard} from "./servicios/guards/esta-logeado.guard";
+import {EsAdministradorGuard} from "./servicios/guards/es-administrador.guard";
+import {EsSupervisorGuard} from "./servicios/guards/es-supervisor.guards";
 
 @NgModule({
   declarations: [
@@ -34,11 +42,19 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    NgbModule, //Boton de angular
+    ButtonModule
     // Importamos el HttpClient
   ],
   providers: [
-    UsuarioService
+    UsuarioService,
+    AuthService,
+    EstaLogeadoGuard,
+    EsAdministradorGuard,
+    EsSupervisorGuard
   ],
   bootstrap: [AppComponent]
 })

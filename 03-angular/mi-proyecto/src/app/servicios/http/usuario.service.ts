@@ -8,24 +8,38 @@ export class UsuarioService {
   // Constructores en angular sirven para
   // Inyección de Dependencias
   constructor(
-    // tslint:disable-next-line:variable-name
-    private readonly _httpClient: HttpClient // servicioo
+    private readonly _httpClient: HttpClient // Servicio
   ) {
+
   }
-  traerTodos(){
-    return this._httpClient.get(this.url + '/Usuario');
+
+  traerTodos(consulta?: string) {
+    return this._httpClient.get(this.url + '/Usuario?' + consulta)
   }
-  obtenerPorId(idUsuario: number) {
+
+  obtenerUnoPorId(idUsuario: number) {
     return this._httpClient.get(this.url + '/Usuario/' + idUsuario);
   }
-  crear(usuario){
+
+  // POST /Usuario
+  crear(usuario) {
     return this._httpClient.post(
-      this.url + '/Usuario', usuario
+      this.url + '/Usuario', // URL
+      usuario
     );
   }
-  eliminar(idUsuario:number){
+
+  editar(usuario, id) {
+    return this._httpClient.put(
+      this.url + '/Usuario/' + id, // URL
+      usuario
+    );
+  }
+
+  eliminar(idUsuario: number) {
     return this._httpClient.delete(
       this.url + '/Usuario/' + idUsuario
-    )
+    );
   }
+
 }

@@ -1,3 +1,8 @@
+<label for="busquedaId">Busqueda</label>
+<input id="busquedaId" name="busqueda" type="text" [(ngModel)]="busquedaModelo">
+<button (click)="filtrarArreglo()">
+  buscar
+</button>
 
 <table>
   <tr>
@@ -11,10 +16,12 @@
     <td>{{usuario.nombre}}</td>
     <td>{{usuario.cedula}}</td>
     <td>
-      <button (click)="irEditarUsuario(usuario.id)">
+      <button (click)="irAEditarUsuario(usuario.id)">
         Editar
       </button>
-      <button (click)="eliminarUsuario(usuario.id)">Eliminar</button>
+      <button (click)="eliminarUsuario(usuario.id)">
+        Eliminar
+      </button>
     </td>
   </tr>
 </table>

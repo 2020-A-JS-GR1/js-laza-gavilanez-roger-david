@@ -44,7 +44,7 @@
       Login
     </a>
   </li>
-  <li>
+  <li *ngIf="_authService.estaAutenticado">
     <a [routerLink]="['usuario']" >
       Usuarios
     </a>
@@ -53,7 +53,23 @@
 <!--<div *ngFor="let usuario of arregloUsuario">-->
 <!--  {{usuario.nombre}}-->
 <!--</div>-->
+<button mat-button color="accent">
+  Accent
+</button>
 
+<button type ="button"
+class ="btn btn-outline-secondary mr-2"
+placement ="top"
+ngbTooltip="Cuidado con verme feo">
+  Tooltip on Top
+
+</button>
+<p placement="botton" ngbTooltip="otro Mas">Ejemplo</p>
+
+<p-button
+label="hola desde prime"
+class="p-button-secondary">
+</p-button>
 <router-outlet>
 
 </router-outlet>
