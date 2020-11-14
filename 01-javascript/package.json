@@ -1,0 +1,63 @@
+{'factura': {
+  'infoTributaria': {
+    'ambiente': '2',
+    'tipoEmision': '1',
+    'razonSocial': 'MIDECAR CIA LTDA',
+    'nombreComercial': 'MIDECAR CIA LTDA',
+    'ruc': '0491501731001',
+    'claveAcceso': '2110202001049150173100120010010000217210083855013',
+    'codDoc': '01',
+    'estab': '001',
+    'ptoEmi': '001',
+    'secuencial': '000021721',
+    'dirMatriz': 'PANAMERICANA S N Y AV VEINTIMILLA'
+  },
+  'infoFactura': {
+    'fechaEmision': '21/10/2020',
+    'dirEstablecimiento': 'ENRIQUE GUERRERO PORTILLA OE1-34 Y AV GALO PLAZA LASSO',
+    'obligadoContabilidad': 'SI',
+    'tipoIdentificacionComprador': '04',
+    'razonSocialComprador': 'GENERAL MOTORS DEL ECUADOR S.A.',
+    'identificacionComprador': '1790598012001',
+    'totalSinImpuestos': '91.34',
+    'totalDescuento': '0',
+    'totalConImpuestos': {
+      'totalImpuesto': {
+        'codigo': '2',
+        'codigoPorcentaje': '2',
+        'baseImponible': '91.34',
+        'valor': '10.96'
+      }
+    },
+    'propina': '0',
+    'importeTotal': '102.30',
+    'moneda': 'DOLAR',
+    'pagos': {
+      'pago': {
+        'formaPago': '20',
+        'total': '102.30',
+        'plazo': '0',
+        'unidadTiempo': 'dias'
+      }
+    }
+  },
+  'detalles': {
+    'detalle': [{
+      'codigoPrincipal': '35',
+      'codigoAuxiliar': '392102',
+      'descripcion': 'ALMACENAJE DE MERCANCIAS',
+      'cantidad': '1.00',
+      'precioUnitario': '54.00',
+      'descuento': '0',
+      'precioTotalSinImpuesto': '54.00',
+      'detallesAdicionales': {
+        'detAdicional': [{'@nombre': 'DAU', '@valor': '41282567'},
+          {'@nombre': 'Solicitante', '@valor': 'GENERAL MOTORS DEL ECUADOR S A '},
+          {'@nombre': 'Consignatario', '@valor': 'CODINTER S A '}]},
+      'impuestos': {
+        'impuesto': {
+          'codigo': '2',
+          'codigoPorcentaje': '2',
+          'tarifa': '12.00',
+          'baseImponible': '54.00',
+          'valor': '6.48'}}}, {'codigoPrincipal': '36', 'codigoAuxiliar': '392103', 'descripcion': 'RECARGO POR RETIRO DE CARGAS TARDIO', 'cantidad': '1.00', 'precioUnitario': '37.34', 'descuento': '0', 'precioTotalSinImpuesto': '37.34', 'impuestos': {'impuesto': {'codigo': '2', 'codigoPorcentaje': '2', 'tarifa': '12.00', 'baseImponible': '37.34', 'valor': '4.48'}}}]}, 'infoAdicional': {'campoAdicional': [{'@nombre': 'Tipo', '#text': 'AGENTE DE RETENCION RESOLUCION N NAC-DNCRASC20-00000001'}, {'@nombre': 'Direccion', '#text': 'ENRIQUE GUERRERO PORTILLA OE1-34 Y AV GALO PLAZA LASSO'}, {'@nombre': 'Telefono', '#text': '022 977700'}, {'@nombre': 'Importador', '#text': 'GENERAL MOTORS DEL ECUADOR S A'}, {'@nombre': 'Ruc Importador', '#text': '1790598012001'}, {'@nombre': 'Direccion Importador', '#text': 'ENRIQUE GUERRERO PORTILLA OE1-34 Y AV GALO PLAZA LASSO'}, {'@nombre': 'Fechas', '#text': '10/10/2020 20/10/2020 21/10/2020 11'}, {'@nombre': 'Solicitud', '#text': '64861'}, {'@nombre': 'Nvh', '#text': '1'}, {'@nombre': 'CPI', '#text': '03954120:3232.9000'}, {'@nombre': 'Cantidad', '#text': '2 HUACALES'}, {'@nombre': 'Refrendo', '#text': '10 07320201000725532:6090001001000021721'}, {'@nombre': 'Peso Bruto', '#text': '203 KILOS:PLUMILLAS LIMPIA PARABRISAS'}, {'@nombre': 'Registro', '#text': 'CEC202062021643'}, {'@nombre': 'Total Letras', '#text': 'CIENTO DOS CON 30/100 DOLARES AMERICANOS'}]}, '{http://www.w3.org/2000/09/xmldsig#}Signature': {'{http://www.w3.org/2000/09/xmldsig#}SignedInfo': {'{http://www.w3.org/2000/09/xmldsig#}CanonicalizationMethod': {'@Algorithm': 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315'}, '{http://www.w3.org/2000/09/xmldsig#}SignatureMethod': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#rsa-sha1'}, '{http://www.w3.org/2000/09/xmldsig#}Reference': [{'{http://www.w3.org/2000/09/xmldsig#}DigestMethod': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#sha1'}, '{http://www.w3.org/2000/09/xmldsig#}DigestValue': 'A0Fgzd6nI4lh2N5ZiM+5P55QS0A=', '@Id': 'SignedPropertiesID59243', '@Type': 'http://uri.etsi.org/01903#SignedProperties', '@URI': '#Signature585498-SignedProperties665898'}, {'{http://www.w3.org/2000/09/xmldsig#}DigestMethod': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#sha1'}, '{http://www.w3.org/2000/09/xmldsig#}DigestValue': 'JDCW/n9AsD7/9QR8nQ/UvtUY/fA=', '@URI': '#Certificate1948211'}, {'{http://www.w3.org/2000/09/xmldsig#}Transforms': {'{http://www.w3.org/2000/09/xmldsig#}Transform': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#enveloped-signature'}}, '{http://www.w3.org/2000/09/xmldsig#}DigestMethod': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#sha1'}, '{http://www.w3.org/2000/09/xmldsig#}DigestValue': '1PuiBCJyy0mblRcyIGhhSF0C4Yc=', '@Id': 'Reference-ID-766747', '@URI': '#comprobante'}], '@Id': 'Signature-SignedInfo4631'}, '{http://www.w3.org/2000/09/xmldsig#}SignatureValue': {'@Id': 'SignatureValue840743', '#text': 'qE1dR+GdGxBgXmxKSwrGVAFVal+V1HcuYOcogKnmDgBKrnKM7lE6lFOaL468nLEqGm5mewYxdKSE\nf5iQxFcWKebVfc2A0xQbSB8K6Pklbog94+LtgAfaLvrKslCvF7JodV3myWAF23RCQhPdupRVQ7iN\nPGfkEUNNSqazDj+m8giGS0ifkO4LdxAHuRPSVgjb3oM9RWBk87b8z2yGDe1UBSAbh5pjCBCExEFO\nPQsl3ZKjw9cyXnfBfPqyBDwxAzSUZBoubYoLMhuQmfdEEkoTxyZuJB8QNoQ/8iJMjMMlcfv+Vepy\nx9peKpPAPBwtt65CpR5S6wqiESLMHbDM8r0+5A=='}, '{http://www.w3.org/2000/09/xmldsig#}KeyInfo': {'{http://www.w3.org/2000/09/xmldsig#}X509Data': {'{http://www.w3.org/2000/09/xmldsig#}X509Certificate': 'MIILfDCCCWSgAwIBAgIEZP7tNzANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV\nBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAxMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ\nT04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV\nQkNBLTEgU0VDVVJJVFkgREFUQTAeFw0yMDA5MDMyMjU0MTlaFw0yMTA5MDMyMjU0MTlaMIGhMQsw\nCQYDVQQGEwJFQzEdMBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDExMDAuBgNVBAsMJ0VOVElE\nQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEVMBMGA1UEBRMMMDMwOTIwMTgwNDE5\nMSowKAYDVQQDDCFOQVJDSVpBIERFIEpFU1VTIE1PTlRFTkVHUk8gTE9QRVowggEiMA0GCSqGSIb3\nDQEBAQUAA4IBDwAwggEKAoIBAQDKNEkaamxpiafNWHDbZKctYfyXHlTJlTXrLYiCWGXLsPHZYUBg\n4T69+jiTA0m4zfpD+kB6VhEMLKOudWh+34nZFNGhWO5hKkn0wFg89wPUtV79Y3838uCyQ/z0gIrS\nIxbh8PEUDmqnxi8AMiZbBwniFrfFj+nXiymtiOvz4vSXwDt3lAs8uyppAP6nr0px3p/otTWUU86s\na0DuEMgUnASe0mjV1y+oeLCNgoO/5JWroDt6DPKkCxZuXX61HYze3kZ9qXT73GMCXThOcxi7Kl5h\nIqJWLYhq8xpZuI/i6LKtQPPSn1S9yYj/7Du3ii5dpWJ8v21XVtaUCpWTZ/eOrVypAgMBAAGjggbA\nMIIGvDBZBggrBgEFBQcBAQRNMEswSQYIKwYBBQUHMAGGPWh0dHA6Ly9vY3NwZ3cuc2VjdXJpdHlk\nYXRhLm5ldC5lYy9lamJjYS9wdWJsaWN3ZWIvc3RhdHVzL29jc3AwHQYDVR0OBBYEFCmp7//x1RdP\nDXVKdfHKml7E7PtUMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUXA+FpHQQ/K0BLBoAPZMXCfo5\nAdYwKwYDVR0QBCQwIoAPMjAyMDA5MDMyMjU0MTlagQ8yMDIxMDkwMzIyNTQxOVowgcwGA1UdLgSB\nxDCBwTCBvqCBu6CBuIaBtWxkYXA6Ly9sZGFwc2Quc2VjdXJpdHlkYXRhLm5ldC5lYy9DTj1BVVRP\nUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0xIFNFQ1VSSVRZIERBVEEsT1U9RU5USURBRCBE\nRSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9OLE89U0VDVVJJVFkgREFUQSBTLkEuIDEsQz1F\nQz9kZWx0YVJldm9jYXRpb25MaXN0P2Jhc2UwbQYDVR0gBGYwZDBiBgorBgEEAYKmcgIJMFQwUgYI\nKwYBBQUHAgIwRh5EAEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQAZQAgAFIAZQBwAHIAZQBzAGUA\nbgB0AGEAbgB0AGUAIABMAGUAZwBhAGwwggKeBgNVHR8EggKVMIICkTCB5aBBoD+GPWh0dHA6Ly9v\nY3NwZ3cuc2VjdXJpdHlkYXRhLm5ldC5lYy9lamJjYS9wdWJsaWN3ZWIvc3RhdHVzL29jc3CigZ+k\ngZwwgZkxOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTEgU0VDVVJJ\nVFkgREFUQTEwMC4GA1UECwwnRU5USURBRCBERSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9O\nMR0wGwYDVQQKDBRTRUNVUklUWSBEQVRBIFMuQS4gMTELMAkGA1UEBhMCRUMwgcSggcGggb6Ggbts\nZGFwOi8vbGRhcHNkLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklD\nQUNJT04gU1VCQ0EtMSBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBE\nRSBJTkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAxLEM9RUM/Y2VydGlmaWNhdGVSZXZv\nY2F0aW9uTGlzdD9iYXNlMIHfoIHcoIHZhoHWaHR0cHM6Ly9wb3J0YWwtb3BlcmFkb3Iuc2VjdXJp\ndHlkYXRhLm5ldC5lYy9lamJjYS9wdWJsaWN3ZWIvd2ViZGlzdC9jZXJ0ZGlzdD9jbWQ9Y3JsJmlz\nc3Vlcj1DTj1BVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0xIFNFQ1VSSVRZIERBVEEs\nT1U9RU5USURBRCBERSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9OLE89U0VDVVJJVFkgREFU\nQSBTLkEuIDEsQz1FQzALBgNVHQ8EBAMCBeAwIwYDVR0RBBwwGoEYbi1tb250ZW5lZ3JvQGhvdG1h\naWwuY29tMBoGCisGAQQBgqZyAwEEDAwKMDQwMDc0MDA0OTAgBgorBgEEAYKmcgMCBBIMEE5BUkNJ\nWkEgREUgSkVTVVMwGgYKKwYBBAGCpnIDAwQMDApNT05URU5FR1JPMBUGCisGAQQBgqZyAwQEBwwF\nTE9QRVowHwYKKwYBBAGCpnIDBQQRDA9HRVJFTlRFIEdFTkVSQUwwNAYKKwYBBAGCpnIDBwQmDCRQ\nQU5BTUVSSUNBTkEgU1VSIFNOIFkgQVYgVkVJTlRJTUlMTEEwHAYKKwYBBAGCpnIDCAQODAw1OTM5\nOTk2NjUyODUwFgYKKwYBBAGCpnIDCQQIDAZUVUxDQU4wPwYKKwYBBAGCpnIDCgQxDC9NSURFQ0FS\nIE1PVklNSUVOVE9TIElOVEVSTk9TIERFIENBUkdBIENJQS4gTFREQTAdBgorBgEEAYKmcgMLBA8M\nDTA0OTE1MDE3MzEwMDEwFwYKKwYBBAGCpnIDDAQJDAdFQ1VBRE9SMBIGCisGAQQBgqZyAx0EBAwC\nTm8wHwYKKwYBBAGCpnIDIAQRDA8wMDIwMDEwMDAwNzU2NjMwEwYKKwYBBAGCpnIDIQQFDANQRlgw\nEQYKKwYBBAGCpnIDIgQDDAEuMA0GCSqGSIb3DQEBCwUAA4ICAQBMItU2X0y4fACdvphP4K0VxlP+\na7aNDtWaGZEwXZEooXH5l8gTX1VCeM1AhWCz2wLqHu3226wwWVQz+9kEV5K+q+vmKUDTbT1PZa5u\njCN75mzBt5WzXoNKMv8N/bnMMs9+gNKoseUkKmUDC1A/IJxbSRufyeSOJVzQcxbyH0pNQ/rDCUAn\n1vrL+KgdSNxlDHq9GalH4vtXIQ4eHF/FT7s+2Vqk8ij+ArYEGH65tTS/5dz1XzhYBrIg+SFOiwve\ndHGOefUDF3zdGv343CpQBrjYSzA8qYtXMgz2uFZwP3WsN4nsEydYV2JCGe+klAJQUFO5ro52Dinz\nVzAz2LI0Lxqbo/yfPidivcot9E/z0ZD0aaEGpUKJYLR/VAo1CjuI9cUn6eBra8RCj/qdP3gKSmuO\nRv1FfqXrGZT+EDQgEb7l+tpaLc6Hbycno0QCOuQGIel55a2huD7sJ/TL9Z0F7fobiTiVnBa7MeyG\nbmvGOKhPn9bsIyeRmBEqcBOBo78cTgZnQxO026df1b7ANfqVxnaaiPGLaEEra/klMam0wdA/o2W9\nJw801nQO/TRVzGS3e/6vIxtIwaTnKZrY584RZqcNLW1XTsA6lyD1XLX9eKoeVwYKxlQVuBmwxTeT\nG+2nlGhSr/TZfBXL/jm1om7illKrsOg4jOvEHIZylF00Qzdjiw=='}, '{http://www.w3.org/2000/09/xmldsig#}KeyValue': {'{http://www.w3.org/2000/09/xmldsig#}RSAKeyValue': {'{http://www.w3.org/2000/09/xmldsig#}Modulus': 'yjRJGmpsaYmnzVhw22SnLWH8lx5UyZU16y2Iglhly7Dx2WFAYOE+vfo4kwNJuM36Q/pAelYRDCyj\nrnVoft+J2RTRoVjuYSpJ9MBYPPcD1LVe/WN/N/LgskP89ICK0iMW4fDxFA5qp8YvADImWwcJ4ha3\nxY/p14sprYjr8+L0l8A7d5QLPLsqaQD+p69Kcd6f6LU1lFPOrGtA7hDIFJwEntJo1dcvqHiwjYKD\nv+SVq6A7egzypAsWbl1+tR2M3t5Gfal0+9xjAl04TnMYuypeYSKiVi2IavMaWbiP4uiyrUDz0p9U\nvcmI/+w7t4ouXaVifL9tV1bWlAqVk2f3jq1cqQ==', '{http://www.w3.org/2000/09/xmldsig#}Exponent': 'AQAB'}}, '@Id': 'Certificate1948211'}, '{http://www.w3.org/2000/09/xmldsig#}Object': {'{http://uri.etsi.org/01903/v1.3.2#}QualifyingProperties': {'{http://uri.etsi.org/01903/v1.3.2#}SignedProperties': {'{http://uri.etsi.org/01903/v1.3.2#}SignedSignatureProperties': {'{http://uri.etsi.org/01903/v1.3.2#}SigningTime': '2020-10-21T09:35:26-05:00', '{http://uri.etsi.org/01903/v1.3.2#}SigningCertificate': {'{http://uri.etsi.org/01903/v1.3.2#}Cert': {'{http://uri.etsi.org/01903/v1.3.2#}CertDigest': {'{http://www.w3.org/2000/09/xmldsig#}DigestMethod': {'@Algorithm': 'http://www.w3.org/2000/09/xmldsig#sha1'}, '{http://www.w3.org/2000/09/xmldsig#}DigestValue': 'mGKeLdg58YZ0yeg59BAKwZlEMmo='}, '{http://uri.etsi.org/01903/v1.3.2#}IssuerSerial': {'{http://www.w3.org/2000/09/xmldsig#}X509IssuerName': 'CN=AUTORIDAD DE CERTIFICACION SUBCA-1 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 1,C=EC', '{http://www.w3.org/2000/09/xmldsig#}X509SerialNumber': '1694428471'}}}}, '{http://uri.etsi.org/01903/v1.3.2#}SignedDataObjectProperties': {'{http://uri.etsi.org/01903/v1.3.2#}DataObjectFormat': {'{http://uri.etsi.org/01903/v1.3.2#}Description': 'Documento de ejemplo', '{http://uri.etsi.org/01903/v1.3.2#}MimeType': 'text/xml', '@ObjectReference': '#Reference-ID-766747'}}, '@Id': 'Signature585498-SignedProperties665898'}, '@Target': '#Signature585498'}, '@Id': 'Signature585498-Object184252'}, '@Id': 'Signature585498'}, '@id': 'comprobante', '@version': '1.1.0'}}
